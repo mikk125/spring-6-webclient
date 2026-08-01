@@ -26,7 +26,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-webclient'
     testImplementation 'org.springframework.boot:spring-boot-starter-webflux-test'
     testImplementation 'org.awaitility:awaitility:4.2.0'
-
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
