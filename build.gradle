@@ -8,6 +8,10 @@ group = 'guru.springframework'
 version = '0.0.1-SNAPSHOT'
 description = 'spring-6-webclient'
 
+ext {
+    logbookVersion = '3.8.0'
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
@@ -30,6 +34,7 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation "org.zalando:logbook-spring-webflux:${logbookVersion}"
 }
 
 tasks.named('test') {
